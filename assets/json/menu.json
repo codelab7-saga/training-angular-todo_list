@@ -1,0 +1,9 @@
+{
+    "MenuIteams":[
+    {"id": 1, "link": "#!/", "name": "Dashboard", "perent": 0},
+    {"id": 2, "link": "#!/view", "name": "View", "perent": 0},
+    {"id": 3, "link": "#!/new", "name": "New Entry", "perent": 2},
+    {"id": 4, "link": "#!/reports", "name": "Reports", "perent": 0},
+    {"id": 5, "link": "http://codelab7.com", "name": "Codelab7 Team", "perent": 0}
+    ]
+}

@@ -1,0 +1,53 @@
+<div class="spacer"></div>
+<div class="addnewtaskform container">
+    <h1 class="text-center">New Task</h1>
+    <div class="status" ng-show="status">{{status}}</div>
+    <div class="sempleTask" ng-show="taskName"><span class="highlight {{priority}}">{{priority | uppercase}}</span> {{taskName}}<strong ng-show="selectedCatagory">{{' -'+ selectedCatagory }}</strong></div>
+    <form>
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 cell">
+                <label>Task Name
+                    <input type="text" name="taskName"  placeholder="Task Name" ng-model="taskName">
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Category
+                    <select ng-model="selectedCatagory">
+                        <option ng-repeat="cat in catgories">{{cat}}</option>
+                    </select>
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Priority
+                    <select ng-model="priority">
+                        <option value="important" class="important">Important</option>
+                        <option value="normal" class="normal">Normal</option>
+                        <option value="low" class="low">Low</option>
+                        <option value="maybe" class="maybe">Maybe</option>
+                    </select>
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <button class="success button expanded" ng-click="addTask()">Add Tasks</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="spacer"></div>
+<div class="addnewtaskform container">
+    <div class="status" ng-show="catStatus">{{catStatus}}</div>
+    <h4 class="text-center">Category</h4>
+    <form>
+        <div class="grid-x grid-margin-x">
+            <div class="medium-12 cell">
+                <label>Category Name
+                    <input type="text" name="taskName" ng-model="newCategory" placeholder="Category Name">
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <button class="success button expanded" ng-click="addCategory()">Add Category</button>
+            </div>
+        </div>
+    </form>
+</div>

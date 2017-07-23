@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+this is semple file to create a small project on AngularJS
+-->
+<html>
+    <head>
+        <title>Advance TODO List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="assets/css/foundation.min.css"/>
+        <link rel="stylesheet" href="assets/css/app.css"/>
+        <script type="text/javascript" src="assets/js/vendor/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/vendor/angular-route.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"/></script>
+</head>
+<body ng-app="todoApp">
+    <div class="grid-x">
+        <div class="shrink cell" ng-controller="MenuController as menu">
+            <div class="menusection">
+                <ul class="vertical menu drilldown" data-drilldown>
+                    <li ng-repeat="iteam in iteams | filter:isMainMenuIteam" ><a href="{{iteam.link}}">{{iteam.name | uppercase }}</a>
+                        <ul class="menu vertical nested" ng-if="hasChild(iteam.id)">
+                            <li ng-repeat="childiteam in iteams" ng-if="childiteam.perent == iteam.id"><a href="{{childiteam.link}}">{{ childiteam.name | uppercase }}</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="auto cell">
+            <div class="main-section"><ng-view></ng-view></div>
+        </div>
+    </div>
+</body>
+</body>
+</html>

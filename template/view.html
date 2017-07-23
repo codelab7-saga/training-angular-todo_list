@@ -1,0 +1,13 @@
+<div ng-if="anyRemainingTask(true)">
+    <h4>Remaining Tasks</h4>
+    <p ng-repeat="task in tasks | importancePriority:'priority'" ng-if="!task.done" class="tasklistNo"  ng-class="{true: 'active', false: ''}[task.done == true]">
+        <input ng-model="task.done" ng-change="task.done" type="checkbox"/><span class="highlight {{task.priority}}">{{task.priority | uppercase}}</span> {{task.name}}<strong ng-show="task.cate">{{' -'+ task.cate }}</strong>
+    </p>
+</div>
+<hr ng-if="anyRemainingTask(true) && anyRemainingTask(false)"/>
+<div ng-if="anyRemainingTask(false)">
+    <h4>Completed Tasks</h4>
+    <p ng-repeat="task in tasks" ng-if="task.done" class="tasklistNo"  ng-class="{true: 'active', false: ''}[task.done == true]">
+        <input ng-model="task.done" ng-change="task.done" type="checkbox"/><span class="highlight {{task.priority}}">{{task.priority | uppercase}}</span> {{task.name}}<strong ng-show="task.cate">{{' -'+ task.cate }}</strong>
+    </p>
+</div>
