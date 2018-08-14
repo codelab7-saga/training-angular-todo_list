@@ -2,7 +2,7 @@
 
 [![N|CodeLab7](https://avatars0.githubusercontent.com/u/39191324?s=200&v=4)](https://codelab7.com)
 
-Advance ToDo List in AngularJS, Best example for learning purpose include services, multi-controller, routing and getting data from JSON file
+Advance ToDo List in AngularJS, the Best example for learning purpose include services, multi-controller, routing and getting data from JSON file.
 
   - Add Tasks
   - Add Categories
@@ -11,31 +11,30 @@ Advance ToDo List in AngularJS, Best example for learning purpose include servic
   - Complete Tasks
 
 ### Introduction
- This is simple AngularJS based single page application. the purpose is learning Angularjs, This Application has a simple architecture which includes most of fetures of Angularjs.   this is best start if you are familier with javascript or jquery
+ ToDo List is a simple AngularJS based single page application. The purpose is learning Angularjs; This Application has a simple architecture which includes most of the features of Angularjs. This is the best start if you are familiar with javascript or jquery
 
-You can also:
+You can do:
   - Pull a request and make it simple to learn
-  - Change in code to test changes in behaviors 
+  - Change in the code to test changes in behaviors 
   - Use however you like
 
-> This repositery is been made when I was learning actually So,   Please correct mistacks and suggest solutions or if 
+> This repository was created when I was learning. So, Please correct mistakes and suggest solutions or if 
 > anything wrong
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+Advance-ToDoList-AngularJS uses a number of open source projects to work properly:
 
 * [AngularJS](https://angularjs.org/) - HTML enhanced for web apps!
 * [Foundation 6](http://foundation.zurb.com/) - great UI boilerplate for modern web apps
 
 
-And of course Advance ToDo List in AngularJS itself is open source with a [public repository](https://github.com/pathusutariya/advance-todoList-angularjs)
- on GitHub.
+And of course, Advance ToDo List in AngularJS itself is open source with a [public repository](https://github.com/pathusutariya/advance-todoList-angularjs) on GitHub.
 
 ### Installation
 
-This code do not have any dependancy You can simply download it and put it in hosting `dir`. and you are ready to launch.
-**Note-** If you wish to open it directly please remove `$http` and section for menu,
+This code does not have any dependency. You can download it and put it in hosting `dir`. And you are ready to launch.
+**Note-** If you wish to open it directly, please remove `$http` and section for the menu.
 
 
 
