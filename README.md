@@ -1,6 +1,6 @@
 # Advance ToDoList in AngularJS
 
-[![N|Solid](http://codelab7.com/assets/thumb.png)](http://codelab7.com/)
+[![N|CodeLab7](https://avatars0.githubusercontent.com/u/39191324?s=200&v=4)](https://codelab7.com)
 
 Advance ToDo List in AngularJS, Best example for learning purpose include services, multi-controller, routing and getting data from JSON file
 
